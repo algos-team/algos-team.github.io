@@ -1,0 +1,29 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background: #3b594a;
+  background-image: url('{{ site.baseurl }}/assets/img/algae-microscope.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header {
+  background: none;
+}
+
+.page-header {
+  text-align: left;
+  color: #238059;
+}
+
+.site-footer {
+  border: none;
+  text-align: left;
+}
+
+.main-content {
+  max-width: none;
+}

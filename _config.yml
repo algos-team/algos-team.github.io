@@ -21,17 +21,17 @@
 title: AlgOS
 email: hello@algos.green
 description: >- # this means to ignore newlines until "baseurl:"
-  AlgOS works on decarbonising our atmosphere for a livable future.
+  AlgOS works on decarbonising our atmosphere with the help of algae.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://algos.green" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
 
 # Build settings
-#remote_theme: pages-themes/cayman@v0.2.0
-theme: midnight
+remote_theme: pages-themes/cayman@v0.2.0
+#theme: midnight
 plugins:
-#  - jekyll-remote-theme
+  - jekyll-remote-theme
   - jekyll-feed
 
 # Exclude from processing.
