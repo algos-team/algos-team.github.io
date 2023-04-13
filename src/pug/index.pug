@@ -1,0 +1,192 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title AlgOS - capturing carbon with the power of micro algae
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet', type='text/css')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body
+
+        // Navigation
+        nav.navbar.navbar-light.bg-light.static-top
+            .container
+                a.navbar-brand(href='#!') AlgOS
+                //a.btn.btn-primary(href='#signup') Sign Up
+
+        // Masthead
+        header.masthead
+            .container.position-relative
+                .row.justify-content-center
+                    .col-xl-6
+                        .text-center.text-white
+                            // Page heading
+                            h1.mb-5 Capturing CO<sub>2</sub> with the power of micro algae
+                            .col-auto
+                                a(href="#intro").btn.btn-primary.btn-lg Find out more
+
+        // Intro
+        #intro.px-4.py-5.my-5.text-center
+            img(src="assets/img/logo.png").d-block.mx-auto.mb-4
+            h1.display-5.fw-bold.text-body-emphasis Hi, we are AlgOS
+            .col-lg-6.mx-auto
+                p.lead.mb-4
+                | We develop an advanced microalgae-based carbon capture technology to make a significant
+                | positive impact on our environment and pave the way towards a carbon-negative future.
+
+
+        // Icons Grid
+        section.features-icons.bg-light.text-center
+            .container
+                .row
+                    .col-lg-4
+                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                            .features-icons-icon.d-flex
+                                i.bi-patch-plus.m-auto.text-primary
+                            h3 Additional
+                            p.lead.mb-0 All our captured carbon is 100% additional
+                    .col-lg-4
+                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                            .features-icons-icon.d-flex
+                                i.bi-lock.m-auto.text-primary
+                            h3 Permanent
+                            p.lead.mb-0 Our carbon is locked away for 100.000+ years
+                    .col-lg-4
+                        .features-icons-item.mx-auto.mb-0.mb-lg-3
+                            .features-icons-icon.d-flex
+                                i.bi-shield-check.m-auto.text-primary
+                            h3 Verifiable
+                            p.lead.mb-0
+
+        // Image Showcases
+        section.showcase
+            .container-fluid.p-0
+                .row.g-0
+                    //.col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/carbon-neg.png');")
+                    .col-lg-12.my-auto.showcase-text
+                        h2 Vision
+                        p.lead.mb-0
+                            |
+                .row.g-0
+                    .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/algae.jpg');")
+                    .col-lg-6.order-lg-1.my-auto.showcase-text
+                        h2 Microalgae
+                        p.lead.mb-0
+                            | Microalgae are highly efficient at capturing carbon dioxide and have a much faster growth
+                            | rate than terrestrial plants.
+                .row.g-0
+                    .col-lg-6.order-lg-1.text-white.showcase-img(style="background-image: url('assets/img/pbr.jpg');")
+                    .col-lg-6.order-lg-2.my-auto.showcase-text
+                        h2 Technology
+                        p.lead.mb-0
+                            | We develop a carbon capturing technology that's sustainable, eco-friendly, and minimizes
+                            | its impact on existing ecosystems. Our technology captures carbon that would otherwise
+                            | remain in the atmosphere and stores it permanently. We're committed to creating a solution
+                            | that's not only effective but also responsible, ensuring a better future for our planet.
+                .row.g-0
+                    .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/biochar.jpg');")
+                    .col-lg-6.order-lg-1.my-auto.showcase-text
+                        h2 Storage
+                        p.lead.mb-0
+                            | The algae biomass in converted though pyrolisis into a stable carbon product like bio char
+                            | or bio oil. This avoids the natural decay of the biomass and the release of the carbon.
+                            | It enables a long term sequestration of the carbon under in the ground.
+
+        // Testimonials
+        section.testimonials.text-center.bg-light
+            .container
+                h2.mb-5 Who we are...
+                .row
+                    .col-lg-3.col-md-6
+                        .testimonial-item.mx-auto.mb-5.mb-lg-0
+                            img.img-fluid.rounded-circle.mb-3(src='assets/img/fabio.jpeg', alt='...')
+                            h5 Fabio
+                            p.font-weight-light.mb-0
+                                | About Fabio...
+                    .col-lg-3.col-md-6
+                        .testimonial-item.mx-auto.mb-5.mb-lg-0
+                            img.img-fluid.rounded-circle.mb-3(src='assets/img/remo.jpeg', alt='...')
+                            h5 Remo
+                            p.font-weight-light.mb-0
+                                | About Remo...
+                    .col-lg-3.col-md-6
+                        .testimonial-item.mx-auto.mb-5.mb-lg-0
+                            img.img-fluid.rounded-circle.mb-3(src='assets/img/jan.jpeg', alt='...')
+                            h5 Jan
+                            p.font-weight-light.mb-0
+                                | About Jan...
+
+                    .col-lg-3.col-md-6
+                        .testimonial-item.mx-auto.mb-5.mb-lg-0
+                            img.img-fluid.rounded-circle.mb-3(src='assets/img/janos.jpg', alt='...')
+                            h5 János
+                            p.font-weight-light.mb-0
+                                | About János
+
+        // Call to Action
+        section#signup.call-to-action.text-white.text-center
+            .container.position-relative
+                .row.justify-content-center
+                    .col-xl-6
+                        h2.mb-4 Get in touch:
+                            a(href="mailto:team@algos.green") team@algos.green
+
+
+        // Footer
+        footer.footer.bg-light
+            .container
+                .row
+                    .col-lg-6.h-100.text-center.text-lg-start.my-auto
+                        //ul.list-inline.mb-2
+                        //    li.list-inline-item
+                        //        a(href='#!') About
+                        //    li.list-inline-item ⋅
+                        //    li.list-inline-item
+                        //        a(href='#!') Contact
+                        //    li.list-inline-item ⋅
+                        //    li.list-inline-item
+                        //        a(href='#!') Terms of Use
+                        //    li.list-inline-item ⋅
+                        //    li.list-inline-item
+                        //        a(href='#!') Privacy Policy
+                        p.text-muted.small.mb-4.mb-lg-0 &copy; AlgOS 2023. All Rights Reserved.
+                    //.col-lg-6.h-100.text-center.text-lg-end.my-auto
+                    //    ul.list-inline.mb-0
+                    //        li.list-inline-item.me-4
+                    //            a(href='#!')
+                    //                i.bi-facebook.fs-3
+                    //        li.list-inline-item.me-4
+                    //            a(href='#!')
+                    //                i.bi-twitter.fs-3
+                    //        li.list-inline-item
+                    //            a(href='#!')
+                    //                i.bi-instagram.fs-3
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
