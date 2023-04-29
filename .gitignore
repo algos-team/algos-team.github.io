@@ -1,17 +1,3 @@
-h2*
-*.sw*
-*~
-TAGS
-bin
-dist
-deploy
-
-*.jar
-!gradle/wrapper/gradle-wrapper.jar
-*.zip
-*.tar.gz
-build.info
-
 # Ignores for EA
 *.log
 *.ldb
