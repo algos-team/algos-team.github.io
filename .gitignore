@@ -1,2 +1,50 @@
-.idea
-node_modules
+# Ignores for EA
+*.log
+*.ldb
+
+# Ignores for git
+*.orig
+*.patch
+
+# Ignores for IntelliJ
+*.iml
+!tooling/idea/**/*.iml
+*.ipr
+*.iws
+.idea/
+
+# Ignores for OS X
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Ignores for Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+logs
+.gradle
+build
+out/
+dataSources/
+.ideaDataSources/
+
+.~lock.*
+.venv
+__pycache__
+node_modules/
+
+layout.json
+*.whl
+*egg-info
+*.pex
+
+.gcp-tmp/
+.terraform*
+terraform.*
+.terraform.*
+.pytest_cache
+
+.config-dev/*
+!.config-dev/*.template.yaml
