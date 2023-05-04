@@ -4,7 +4,7 @@
 
 // Override Bootstrap typography variables
 
-$font-family-base: "Lato",
+$font-family-base: "Helvetica",
 -apple-system,
 BlinkMacSystemFont,
 "Segoe UI",
@@ -18,3 +18,4 @@ sans-serif,
 "Noto Color Emoji";
 
 $headings-font-weight: 700;
+$font-weight-normal: 300 !default;
