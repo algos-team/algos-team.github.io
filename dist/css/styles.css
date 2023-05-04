@@ -57,9 +57,9 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: Helvetica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
+  --bs-body-font-weight: 300;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
@@ -1995,7 +1995,7 @@ progress {
   width: 100%;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -2147,7 +2147,7 @@ textarea.form-control-lg {
   padding: 0.75rem 3rem 0.75rem 1rem;
   -moz-padding-start: calc(1rem - 3px);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -2527,7 +2527,7 @@ textarea.form-control-lg {
   align-items: center;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -2770,7 +2770,7 @@ textarea.form-control-lg {
   --bs-btn-padding-y: 0.75rem;
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
-  --bs-btn-font-weight: 400;
+  --bs-btn-font-weight: 300;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: #212529;
   --bs-btn-bg: transparent;
@@ -3116,7 +3116,7 @@ textarea.form-control-lg {
 }
 
 .btn-link {
-  --bs-btn-font-weight: 400;
+  --bs-btn-font-weight: 300;
   --bs-btn-color: var(--bs-link-color);
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;
@@ -3447,7 +3447,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
   clear: both;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--bs-dropdown-link-color);
   text-align: inherit;
   text-decoration: none;
@@ -5541,9 +5541,9 @@ textarea.form-control-lg {
   display: block;
   padding: var(--bs-tooltip-arrow-height);
   margin: var(--bs-tooltip-margin);
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -5651,9 +5651,9 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -7951,7 +7951,7 @@ textarea.form-control-lg {
 }
 
 .fw-normal {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 
 .fw-bold {
@@ -10843,29 +10843,35 @@ header.masthead {
   background-color: #343a40;
   background: url("../assets/img/spirulina.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #03200f !important;
 }
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1d4741;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 60%, rgb(255, 255, 255));
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
 }
 header.masthead h1, header.masthead .h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+header.masthead .subtitle {
+  font-size: 1.5rem;
 }
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+  }
+  header.masthead .subtitle {
+    font-size: 2rem;
   }
 }
 
