@@ -5,7 +5,7 @@
 .call-to-action {
     position: relative;
     background-color: $gray-800;
-    background: url('../assets/img/bg-masthead.jpg') no-repeat center center;
+    background: url('../assets/img/bg-footer.webp') no-repeat center top;
     background-size: cover;
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -13,11 +13,25 @@
     &:before {
         content: '';
         position: absolute;
-        background-color: mix($gray-900, $primary, 75%);
+        // background-color: mix($gray-900, $primary, 75%);
+        // background-color: #ffffff;
+        // opacity: 0.3;
+        background-image: rgba(248, 249, 250, 0.25);
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
-        opacity: 0.5;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #3b783d;
+      border-color: #58923e;
+
+      &:hover {
+        background-color:#89b945;
+        border-color:#3b783d;
+        color: #000;
+      }
     }
 }

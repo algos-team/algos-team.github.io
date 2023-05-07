@@ -52,12 +52,16 @@ html(lang='en')
                             //- div.mb-5.subtitle carbon farming at scale
 
         // Intro
-        #intro.px-4.py-5.my-5.text-center
-            h1.display-5.fw-bold.text-body-emphasis What we do
+        //- #intro.px-4.py-5.my-5.text-center
+        #intro.py-5.text-center.bg-light
+            //- h1.display-5.fw-bold.text-body-emphasis What we do
             .col-lg-6.mx-auto
                 p.lead.mb-0
-                | We develop an advanced microalgae-based carbon capture and storage technology to make a significant
-                | positive impact on our environment and pave the way towards a carbon-negative future.
+                  | At algOS, we recognize that addressing the climate crisis requires a
+                  | diverse array of innovative solutions. With this in mind, we're developing
+                  | a low-tech, microalgae-based carbon capture and storage technology designed
+                  | to make a substantial positive impact on our environment, ultimately propelling
+                  | us towards a carbon-negative future.
 
 
         // Icons Grid
@@ -67,7 +71,7 @@ html(lang='en')
                     .col-lg-4
                         .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
                             .features-icons-icon.d-flex
-                                i.bi-patch-plus.m-auto.text-primary
+                                i.bi-patch-plus.m-auto.text-primary.icon-color
                             h3 Additional
                             p.lead.mb-0
                                 | We grow microalgal biomass at scale without interfering with other ecosystems
@@ -75,7 +79,7 @@ html(lang='en')
                     .col-lg-4
                         .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
                             .features-icons-icon.d-flex
-                                i.bi-lock.m-auto.text-primary
+                                i.bi-lock.m-auto.text-primary.icon-color
                             h3 Permanent
                             p.lead.mb-0
                                 | Through pyrolysis we produce biochar and (pyrolysis) oil which can be stored for
@@ -83,7 +87,7 @@ html(lang='en')
                     .col-lg-4
                         .features-icons-item.mx-auto.mb-0.mb-lg-3
                             .features-icons-icon.d-flex
-                                i.bi-shield-check.m-auto.text-primary
+                                i.bi-shield-check.m-auto.text-primary.icon-color
                             h3 Verifiable
                             p.lead.mb-0
                                 | We provide a digital track record of every process step, work with established
@@ -122,56 +126,60 @@ html(lang='en')
         // Testimonials
         section.testimonials.text-center.bg-light
             .container
-                h2.mb-5 About us
-                p.lead.mb-0
-                    | TBD
-                    <br><br>
-                .row
-                    .col-lg-3.col-md-6
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.rounded-circle.mb-3(src='assets/img/team/fabio.png', alt='...')
-                            h5 Fabio
-                            p.font-weight-light.mb-0
-                                | Fabio has a degree in Computer Science &amp; Biomedical Engineering and loves
-                                | building things. At algOS he's the jack of all trades master of none.
-                    .col-lg-3.col-md-6
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.rounded-circle.mb-3(src='assets/img/team/remo.png', alt='...')
-                            h5 Remo
-                            p.font-weight-light.mb-0
-                                | With a background in computer science and electrical engineering, Remo 
-                                | works on improving, scaling and parallelizing our reactor designs.
-                    .col-lg-3.col-md-6
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.rounded-circle.mb-3(src='assets/img/team/jan.png', alt='...')
-                            h5 Jan
-                            p.font-weight-light.mb-0
-                                | Jan did his PhD on modelling biological systems and developing numerical 
-                                | methods. At algOS, he develops computational algae models
-                                | for the optimal carbon uptake from the air.
+              .row
+                h2.mb-0 About us
+                div.lead.mb-0
+                    | Our co-founders bring together a diverse and powerful skillset, including expertise in computer science,
+                    | electronic engineering, control theory, data science, and mathematics. This unique combination of knowledge
+                    | allows us to innovate and create solutions that address the complex challenges of climate change. At algOS, we
+                    | are dedicated to making a positive impact on the world, and our team is committed to delivering groundbreaking
+                    | solutions for a greener future.
+              .row.p-4
+              .row
+                  .col-lg-3.col-md-6
+                      .testimonial-item.mx-auto.mb-5.mb-lg-0
+                          img.img-fluid.rounded-circle.mb-3(src='assets/img/team/fabio.png', alt='...')
+                          h5 Fabio
+                          p.font-weight-light.mb-0
+                              | Fabio has a degree in Computer Science &amp; Biomedical Engineering and loves
+                              | building things. At algOS he's the jack of all trades master of none.
 
-                    .col-lg-3.col-md-6
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.rounded-circle.mb-3(src='assets/img/team/janos.png', alt='...')
-                            h5 János
-                            p.font-weight-light.mb-0
-                                | János is a trained mathematician and experienced data scientist &amp; software engineer,
-                                | he supports algOS in all things data.
+                  .col-lg-3.col-md-6
+                      .testimonial-item.mx-auto.mb-5.mb-lg-0
+                          img.img-fluid.rounded-circle.mb-3(src='assets/img/team/remo.png', alt='...')
+                          h5 Remo
+                          p.font-weight-light.mb-0
+                              | With a background in computer science and electrical engineering, Remo
+                              | works on improving, scaling and parallelizing our reactor designs.
+
+                  .col-lg-3.col-md-6
+                      .testimonial-item.mx-auto.mb-5.mb-lg-0
+                          img.img-fluid.rounded-circle.mb-3(src='assets/img/team/jan.png', alt='...')
+                          h5 Jan
+                          p.font-weight-light.mb-0
+                              | Jan did his PhD on modelling biological systems and developing numerical
+                              | methods. At algOS, he develops computational algae models
+                              | for the optimal carbon uptake from the air.
+
+                  .col-lg-3.col-md-6
+                      .testimonial-item.mx-auto.mb-5.mb-lg-0
+                          img.img-fluid.rounded-circle.mb-3(src='assets/img/team/janos.png', alt='...')
+                          h5 János
+                          p.font-weight-light.mb-0
+                              | János is a trained mathematician and experienced data scientist &amp; software engineer,
+                              | he supports algOS in all things data.
 
         // Call to Action
         section#signup.call-to-action.text-white.text-center
-            .container.position-relative
-                .row.justify-content-center
-                    .col-xl-6.lead.mb-0
-                        | We would love to hear from you.<br><br>
-
-                        a(href="mailto:hello@algos.green").btn.btn-primary.btn-lg
-                            i.bi-envelope.m-auto
-                            | Get in touch
-                        //.col-auto
-                        //h2.mb-4 Get in touch:
-                        //    a(href="mailto:team@algos.green") team@algos.green
-
+          .container.position-relative
+            .row.justify-content-center
+              .col-xl-6.lead.mb-0
+                h3 We would love to hear from you.
+            .row.p-3
+              .col-6.mx-auto.d-grid.gap-2
+                a(href="mailto:hello@algos.green").btn.btn-primary.btn-lg
+                  span.bi-envelope.m-auto
+                  | Get in touch
 
         // Footer
         footer.footer.bg-light
