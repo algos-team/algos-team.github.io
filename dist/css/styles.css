@@ -10850,7 +10850,7 @@ header.masthead {
 header.masthead:before {
   content: "";
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 60%, rgb(255, 255, 255));
+  background-image: linear-gradient(to bottom, rgba(248, 249, 250, 0.5) 60%, rgb(248, 249, 250));
   height: 100%;
   width: 100%;
   top: 0;
@@ -10873,6 +10873,10 @@ header.masthead .subtitle {
   header.masthead .subtitle {
     font-size: 2rem;
   }
+}
+
+.icon-color {
+  color: #3b783d !important;
 }
 
 .showcase .showcase-text {
@@ -10903,7 +10907,7 @@ header.masthead .subtitle {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/bg-footer.webp") no-repeat center top;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -10911,12 +10915,21 @@ header.masthead .subtitle {
 .call-to-action:before {
   content: "";
   position: absolute;
-  background-color: #1d4741;
+  background-image: rgba(248, 249, 250, 0.25);
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
+}
+.call-to-action .btn-primary {
+  color: #fff;
+  background-color: #3b783d;
+  border-color: #58923e;
+}
+.call-to-action .btn-primary:hover {
+  background-color: #89b945;
+  border-color: #3b783d;
+  color: #000;
 }
 
 footer.footer {
